@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+.plan {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    min-height: 50px;
+}
+
+.plam table {
+    width: 85%;
+    border-collapse: collapse;
+    background: white;
+    overflow: hidden;
+}
+
+.plan th,
+.plan td {
+    padding: 10px 100px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.plan thead {
+    font-weight: 700;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+
+tr:hover{
+    background-color: grey;
+    transition: 0.2s;
+}
