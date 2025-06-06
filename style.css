@@ -1,6 +1,7 @@
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 140px;
+    left: 0;
 }
 
 .header{
@@ -209,4 +210,21 @@ body{
 tr:hover{
     background-color: grey;
     transition: 0.2s;
+}
+#loading-screen {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #282c34;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+#loading-screen.hidden {
+    opacity: 0;
+    pointer-events: none;
 }

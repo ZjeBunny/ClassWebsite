@@ -38,3 +38,14 @@ prev.onclick = function () {
 	active = active - 1 >= 0 ? active - 1 : active;
 	loadShow();
 };
+
+
+setTimeout(() => {
+    const loadingScreen = document.getElementById('loading-screen');
+    loadingScreen.classList.add('hidden');
+
+setTimeout(() => {
+    loadingScreen.style.display = 'none';
+    document.getElementById('container').style.display = 'block';
+    }, 200);
+}, 1000);
